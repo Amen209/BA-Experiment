@@ -60399,7 +60399,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-let MJ = MathJax;
 function graph_dictionary_notBalanced() {
     let result = [];
     for (let g of _repository_with_15_innernodes_js__WEBPACK_IMPORTED_MODULE_5__.graphs_repository_not_balanced) {
