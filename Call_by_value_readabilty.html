@@ -8,10 +8,17 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es5"></script>
     <script>
         window.MathJax = {
-            //tex: {inlineMath: [['\\(', '\\)']]},
+            tex: {inlineMath: [['\\(', '\\)']]},
             chtml: {
                 scale: 1.5
-            }
+            },
+            startup: {
+    typeset: false,  // Automatisches Typesetting deaktivieren
+    ready: function() {
+      MathJax.startup.defaultReady();
+      console.log('MathJax is ready');
+    }
+  }
         };
     </script>
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
