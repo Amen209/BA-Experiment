@@ -7,12 +7,20 @@
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es5"></script>
     <script>
- window.MathJax = {
-           tex: {inlineMath: [['\\(', '\\)']]},
-            chtml: {
-                scale: 1.5
-            }
-}  </script>
+          window.MathJax = {
+    startup: {
+      ready: function () {
+        MathJax.startup.defaultReady();
+        console.log('MathJax is loaded and ready to use');
+        MathJax.typesetPromise().then(() => {
+          console.log('Typesetting completed');
+        }).catch((err) => {
+          console.error('Typesetting failed: ', err);
+        });
+      }
+    }
+  };
+ </script>
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
 
     <style>
