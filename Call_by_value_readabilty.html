@@ -16,13 +16,12 @@
                 fontCache:'global'
             }
         };
- startup: {
-                ready: () => {
-                    MathJax.startup.defaultReady();
-                    MathJax.startup.promise.then(() => {
-                        window.PagedPolyfill.preview(); /* do this for example*/
-                    });
-                }
+startup: {
+            ready: () => {
+                MathJax.startup.defaultReady();
+                console.log("MathJax ist bereit");
+            },
+        },
             }
     </script>
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" async></script>
