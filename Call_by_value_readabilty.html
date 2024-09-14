@@ -16,6 +16,21 @@
                 fontCache:'global'
             }
         };
+        window.PageConfig = {
+  before: (() => {
+    let pagedResolve;
+    let pagedPromise = new Promise((resolve) => {pagedResolve = resolve});
+    
+    MathJax.startup = {
+      ready: () => {
+        MathJax.startup.defaultReady();
+        MathJax.startup.promise.then(() => pagedResolve());
+      }
+    };
+    
+    return () => pagedPromise;
+  })()
+};
     </script>
     <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" async></script>
 
