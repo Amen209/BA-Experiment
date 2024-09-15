@@ -16,8 +16,14 @@
                 scale: 1.6
             },
               tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  },
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            startup: {
+                ready: function () {
+                    MathJax.startup.defaultReady();
+                    MathJax.typesetPromise();  // Verwende typesetPromise hier
+                }
+            }
   svg: {
     fontCache: 'global'
   }
