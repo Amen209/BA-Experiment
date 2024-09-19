@@ -7,7 +7,9 @@ Sobald Sie die Anweisungen gelesen haben und sich sicher fühlen, können Sie au
 Am Ende des Experiments senden Sie bitte die generierte CSV-Datei an den Betreuer Dr. Stefan Hanenberg sowie an den zuständigen Studenten Amen Hassan
 
 Dr. Stefan Hanenberg
+
 Mail: stefan.hanenberg@uni-due.de
 
 Amen Hassan
+
 Mail: amen.hassan@stud.uni-due.de
