@@ -749,6 +749,6 @@ MathJax.typesetPromise().then((function(){console.log("MathJax rendering complet
 // } else {
 //     console.error('MathJax is not loaded');
 // }
-}};t.expected_answer=""+next_call_by_value_operator(tree_not_balanced,Position+1,isMathjax);t.do_print_after_task_information=function(){var next_task_kind=t.next_task()!=null?"The next task is shown as "+t.next_task().treatment_combination[0].value+".":"";writer.clear_stage();writer.print_string_on_stage(writer.convert_string_to_html_string("Correct answer : "+t.expected_answer+"\nGiven answer : "+t.given_answer+"\nPlease, take a short break of at least 5 seconds.\n\n"+"Press [Enter] to go on. "+next_task_kind))}}}};(0,_modules_Experimentation_Browser_Output_Writer_js__WEBPACK_IMPORTED_MODULE_1__.BROWSER_EXPERIMENT)(experiment_configuration_function)})();
+}};t.expected_answer=""+next_call_by_value_operator(tree_not_balanced,Position+1,isMathjax);t.do_print_after_task_information=function(){var next_task_kind=t.next_task()!=null?"The next task is shown as "+t.next_task().treatment_combination[0].value+".":"";writer.print_string_on_stage(writer.convert_string_to_html_string("Correct answer : "+t.expected_answer+"\nGiven answer : "+t.given_answer+"\nPlease, take a short break of at least 5 seconds.\n\n"+"Press [Enter] to go on. "+next_task_kind))}}}};(0,_modules_Experimentation_Browser_Output_Writer_js__WEBPACK_IMPORTED_MODULE_1__.BROWSER_EXPERIMENT)(experiment_configuration_function)})();
 /******/})();
 //# sourceMappingURL=Experiment.js.map
